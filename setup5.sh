@@ -36,8 +36,8 @@ sudo apt-get install -y libpq-dev postgresql
 
 # Make the mongodb docker container
 mkdir -p ~/mongo-data
-docker pull mongo:7.0
-docker run -d --name mongodb -p 27017:27017 -v ~/mongo-data:/data/db mongo:7.0
+sudo docker pull mongo:7.0
+sudo docker run -d --name mongodb -p 27017:27017 -v ~/mongo-data:/data/db mongo:7.0
 
  #add the cuckoo user
  sudo adduser cuckoo
