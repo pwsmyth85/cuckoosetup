@@ -24,6 +24,9 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# reload the shell 
+source ~/.bashrc
+
 # Install Python 2.7.18 (last 2.7 release)
 pyenv install 2.7.18
 
